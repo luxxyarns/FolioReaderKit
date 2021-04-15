@@ -1328,7 +1328,7 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
     /**
      Present chapter list
      */
-    @objc func presentChapterList(_ sender: UIBarButtonItem) {
+    @objc public func presentChapterList(_ sender: UIBarButtonItem) {
         folioReader.saveReaderState()
 
         let chapter = FolioReaderChapterList(folioReader: folioReader, readerConfig: readerConfig, book: book, delegate: self)
@@ -1346,7 +1346,7 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
     /**
      Present fonts and settings menu
      */
-    @objc func presentFontsMenu() {
+    @objc public func presentFontsMenu() {
         folioReader.saveReaderState()
         hideBars()
 
